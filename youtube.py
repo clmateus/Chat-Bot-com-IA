@@ -18,10 +18,10 @@ lista_documentos = loader.load()
 documento = ''
 
 template = ChatPromptTemplate.from_messages([
-    ('system', 'Você é um assistente amigável que possui as seguintes informações para formular uma resposta: {informacoes}'),
+    ('system', 'Você é um assistente amigável chamado MateusBotque possui as seguintes informações para formular uma resposta: {informacoes}'),
     ('user', '{input}')
 ])
 
 chain_youtube = template | chat
-resposta = chain_youtube.invoke({'informacoes': documento, 'input': 'Segundo o autor do documento, há quanto tempo ele programa em Python?'})
+resposta = chain_youtube.invoke({'informacoes': documento, 'input': 'Sobre o que esse vídeo fala?'})
 print(resposta.content)
