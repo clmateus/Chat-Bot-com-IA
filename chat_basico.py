@@ -17,7 +17,7 @@ mensagens = []
 # Função que recebe a lista com as conversas e retorna a resposta da IA
 def resposta_bot(mensagem):
     # Define o comportamento da IA
-    mensagens_modelo = [('system', 'Você é um assistente amigável chamado Márcio Bot')]
+    mensagens_modelo = [('system', 'Você é um assistente amigável chamado MateusBot')]
     # Junta o comportamento da IA com as entradas do usuário
     mensagens_modelo += mensagens
     # Define o template da IA
@@ -48,6 +48,6 @@ while True:
     mensagens.append(('assistant', resposta))
 
     # Imprime no console a resposta da IA
-    print(f'AssistantBot: {resposta}')
+    print(f'MateusBot: {resposta}')
 
-print('Muito obrigado por usar o Márcio Bot')
+print('Muito obrigado por usar o MateusBot')
