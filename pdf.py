@@ -20,7 +20,7 @@ for doc in lista_documentos:
     documento += doc.page_content
 
 template = ChatPromptTemplate.from_messages({
-    ('system', 'Você é um assistente amigável chamado Marselo Bot e tem as seguintes informações para formular respostas: {informacoes}'),
+    ('system', 'Você é um assistente amigável chamado MateusBot e tem as seguintes informações para formular respostas: {informacoes}'),
     ('user', '{input}')
 })
 
